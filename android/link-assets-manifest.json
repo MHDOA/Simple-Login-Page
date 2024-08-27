@@ -1,0 +1,65 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "Assets/Fonts/Sahel/Sahel-Black.ttf",
+      "sha1": "c86fda2f66882f3eb015677363ff1331fb9c274a"
+    },
+    {
+      "path": "Assets/Fonts/Sahel/Sahel-Bold.ttf",
+      "sha1": "ebafb0ab4eb352f96f140c1fcce3d5a97f781340"
+    },
+    {
+      "path": "Assets/Fonts/Sahel/Sahel-Light.ttf",
+      "sha1": "d96d759b5e1fab878f18cde6e60f27c7db136df5"
+    },
+    {
+      "path": "Assets/Fonts/Sahel/Sahel-SemiBold.ttf",
+      "sha1": "ae8b2cec9bf93ab444080253a958b320854cf20c"
+    },
+    {
+      "path": "Assets/Fonts/Sahel/Sahel-VF.ttf",
+      "sha1": "dba513db7232e663937cf3163cbb9e55bcbcea2a"
+    },
+    {
+      "path": "Assets/Fonts/Sahel/Sahel.ttf",
+      "sha1": "919458a18e2ae638448f4255c71130a08c4dba81"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-Black.ttf",
+      "sha1": "96750e70c96006cd6439a0dee275e8e08793a854"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-Bold.ttf",
+      "sha1": "c01e41bc392a8b2cd4b9f7ae995c5a284a2920c7"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-ExtraBold.ttf",
+      "sha1": "e2449b48285cb4b9eb42d0997f603e9f3c25d741"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-ExtraLight.ttf",
+      "sha1": "0282acfede6df99aaa772244ab1bacc63d530f38"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-Light.ttf",
+      "sha1": "3981d44c761cf7dc717761cb134d2d288bfc1c3c"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-Medium.ttf",
+      "sha1": "5c21c7fe0ae95852891f0d527fbcbee5b51e637e"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-Regular.ttf",
+      "sha1": "253d2f6e4121d70ee0928568470b032d5eec773a"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-SemiBold.ttf",
+      "sha1": "b9a3fb213731d5b1707b8515df34740b7c836553"
+    },
+    {
+      "path": "Assets/Fonts/VazirMatn/Vazirmatn-Thin.ttf",
+      "sha1": "9e4ee793afe3564dfc1f1ce102a117babe1e8605"
+    }
+  ]
+}
