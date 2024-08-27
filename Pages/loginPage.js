@@ -3,7 +3,7 @@ import loginStyle from '../Styles/loginPageStyle';
 import {
   Button, Heading, NativeBaseProvider, Text, View, VStack, HStack, Input, Center
 } from 'native-base'
-
+import customFont from '../Styles/CustomFont';
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +13,7 @@ class Login extends Component {
 
   render() {
     return (
-      <NativeBaseProvider>
+      <NativeBaseProvider theme={customFont}>
 
       </NativeBaseProvider>
     );
