@@ -2,10 +2,6 @@ import { StyleSheet } from "react-native";
 
 const loginStyle = StyleSheet.create({
 
-    TitleStyle:{
-        fontSize:15,
-        fontWeight:'bold'
-    },
     HeaderStyle:{
         flex:1,
         backgroundColor:"#000"
@@ -13,12 +9,12 @@ const loginStyle = StyleSheet.create({
     BodyStyle:{
         flex:14,
         alignItems:'center',
-        justifyContent:'flex-start'
+        justifyContent:'center',
     },
     FooterStyle:{
         flex:1,
         backgroundColor:"#0f0"
-    }
+    },
 })
 
 export default loginStyle

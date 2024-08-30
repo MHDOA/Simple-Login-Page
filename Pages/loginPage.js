@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import loginStyle from '../Styles/loginPageStyle';
 import {
-  Button, Heading, NativeBaseProvider, Text, View, VStack, HStack, Input, Center
-} from 'native-base'
+  Button, NativeBaseProvider, Text, View, VStack, HStack, Input, Center, Box, Footer, FooterTab, Icon,
+  AddIcon,
+  HamburgerIcon,
+  StatusBar, TextInput,
+  FormControl} from 'native-base'
 import customFont from '../Styles/CustomFont';
+import LoginCardView from '../Components/LoginCardView';
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +19,16 @@ class Login extends Component {
   render() {
     return (
       <NativeBaseProvider theme={customFont}>
+        <View style={loginStyle.HeaderStyle}>
+        </View>
 
+        <View style={loginStyle.BodyStyle}>
+          <LoginCardView></LoginCardView>
+        </View>
+
+        <View style={loginStyle.FooterStyle}>
+
+        </View>
       </NativeBaseProvider>
     );
   }

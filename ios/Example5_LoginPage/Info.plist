@@ -64,6 +64,8 @@
 		<string>Vazirmatn-Regular.ttf</string>
 		<string>Vazirmatn-SemiBold.ttf</string>
 		<string>Vazirmatn-Thin.ttf</string>
+		<string>antfill.ttf</string>
+		<string>antoutline.ttf</string>
 	</array>
 </dict>
 </plist>
