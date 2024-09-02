@@ -1,10 +1,14 @@
 import React, { Component, useState } from 'react';
-import { Box, Input, FormControl, Button, Icon } from 'native-base';
+import { Box, Input, FormControl, Button, useToast, Center } from 'native-base';
 import { IconFill, IconOutline } from "@ant-design/icons-react-native";
+import User from '../Class/User';
 import { Alert } from 'react-native';
+
 export default LoginCardView = props => {
 
-    const VALIDATE_USERNAME = ['علی', 'محمد']
+    const toast = useToast();
+
+    const VALIDATE_USERNAME = [new User('محمد', '12345678'), new User('رضا', '87654321')]
 
     const MIN_USERNAME_LENGTH = 3
     const MAX_USERNAME_LENGTH = 24
@@ -21,9 +25,6 @@ export default LoginCardView = props => {
         if (username.length < MIN_USERNAME_LENGTH || username.length > MAX_USERNAME_LENGTH) {
             return 'طول نام کاربری باید بین ۳ تا ۲۴ کاراکتر باشد'
         }
-        // else if (!VALIDATE_USERNAME.includes(username)) {
-        //     return 'نام کاربری موجود نمیباشد'
-        // }
         return null
     }
 
@@ -42,7 +43,26 @@ export default LoginCardView = props => {
         SetPasswordError(passwordValidationError)
 
         if (!usernameValidationError && !passwordValidationError) {
-            // Successfull login       
+
+            const id = 'login-message-toast' // To prevent from duplicate toast
+
+            var description = 'نام کاربری یافت نشد'
+            var isLogin = false
+
+            const user = VALIDATE_USERNAME.find(element => element.name == username)
+            if (user) {
+                isLogin = user.Validation(password)
+                description = isLogin ? 'ورود با موفقیت انجام شد' : 'نام کاربری یا رمز ورود نادرست است'
+            }
+
+            if (!toast.isActive(id)) {
+                toast.show({
+                    title: (isLogin ? 'ورود موفق' : 'خطا'),
+                    description,
+                    id,
+                    duration: 3000
+                })
+            }
         }
     }
 
